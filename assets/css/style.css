@@ -116,7 +116,6 @@ ul {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
-  flex-wrap: wrap;
   width: 31%;
   cursor: pointer;
 }
@@ -131,9 +130,13 @@ ul {
   align-items: flex-start;
   gap: 10px;
 }
+.card > div:nth-of-type(2) h4 {
+  flex-grow: 1;
+}
 h4 {
   font-weight: bold;
   font-size: 1.1rem;
+  word-wrap: break-word;
 }
 .card img,
 .cardOthers > div img {
