@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Spectral:wght@300;400;700&display=swap");
+
+:root {
+  --central-width: 80%;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-size: 7rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  width: 450px;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+li {
+  cursor: pointer;
+}
+header {
+  padding-top: 83px;
+}
+nav {
+  background-color: #ffc017;
+  display: flex;
+  justify-content: center;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  width: 100dvw;
+  z-index: 99;
+  transition: background-color 200ms;
+}
+.container {
+  width: var(--central-width);
+  display: flex;
+  align-items: center;
+}
+.container.nav {
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  column-gap: 30px;
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+.scrollDown {
+  background-color: white;
+}
+.scrollDownBtn {
+  background-color: green;
+}
+#hero {
+  background-color: #ffc017;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-bottom: 1px solid black;
+  padding-top: 4rem;
+  margin-bottom: 3rem;
+}
+.container.hero {
+  width: var(--central-width);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn.read {
+  border: none;
+  width: 210px;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+#Msvg {
+  position: absolute;
+}
+.trending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid lightgray;
+}
+.trendingHeading {
+  width: var(--central-width);
+  display: flex;
+  align-items: center;
+}
+.trendingContent {
+  width: var(--central-width);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.card {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 31%;
+  cursor: pointer;
+}
+.card > div:first-of-type {
+  color: rgba(231, 229, 229, 0.694);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.card > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+h4 {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.card img,
+.cardOthers > div img {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+small {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.cardHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+span {
+  color: gray;
+  font-size: 0.8rem;
+}
+.date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+section > div {
+  width: var(--central-width);
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem;
+}
+.others {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cardOthers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  height: 138px;
+  cursor: pointer;
+}
+.cardOthers > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.cardOthers img {
+  height: 100%;
+  width: auto;
+}
+.cardOthers h4 {
+  font-size: 1.3rem;
+}
+.date > div {
+  display: flex;
+  align-items: center;
+}
+.bckgrnd {
+  background-color: rgb(231, 229, 229);
+  border-radius: 20px;
+  padding: 2px 5px;
+}
+aside {
+  width: 40%;
+  color: gray;
+  position: sticky;
+  top: calc(3rem + 83px);
+}
+aside h4 {
+  color: black;
+  margin-bottom: 1rem;
+}
+aside > div {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+aside ul {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+aside > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+g {
+  transition: opacity 300ms;
+}
