@@ -242,6 +242,14 @@ button {
   cursor: pointer;
 }
 
-g {
-  transition: opacity 300ms;
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
